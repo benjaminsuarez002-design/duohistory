@@ -23,3 +23,15 @@ El código desplegado está en:
 `supabase/functions/duohistory/index.ts`
 
 Proyecto Supabase actual: `tizyjenayrcdkcodsjnc`.
+
+
+## Cloudflare Pages
+Este repositorio está preparado para publicarse como sitio estático en Cloudflare Pages.
+
+Configuración recomendada:
+- Production branch: `main`
+- Build command: dejar vacío
+- Build output directory: `.`
+- Project name: `duohistory`
+
+El frontend consume el backend de Supabase ya desplegado.
