@@ -30,7 +30,7 @@ Este repositorio está preparado para publicarse como sitio estático en Cloudfl
 
 Configuración recomendada:
 - Production branch: `main`
-- Build command: dejar vacío
+- Build command: `exit 0`
 - Build output directory: `.`
 - Project name: `duohistory`
 
