@@ -12,8 +12,8 @@
 .hero{display:flex;justify-content:space-between;gap:18px}.hero h1{font-size:clamp(30px,5vw,50px);margin:6px 0 10px;line-height:1}.hero p{color:var(--muted);max-width:760px;line-height:1.5}.badge{font-size:12px;border:1px solid currentColor;border-radius:999px;padding:8px 11px;height:max-content}.bad{color:var(--bad)}.good{color:var(--good)}
 .grid{display:grid;grid-template-columns:1fr 1fr 240px auto;gap:12px;align-items:end}.field{display:flex;flex-direction:column;gap:6px;position:relative}.nick-suggestions{display:none;position:absolute;top:100%;left:0;right:0;z-index:30;margin-top:6px;background:#0c1119;border:1px solid var(--border);border-radius:11px;box-shadow:0 14px 30px #0008;overflow:hidden;max-height:220px;overflow-y:auto}.nick-suggestions.open{display:block}.nick-suggestion{padding:10px 12px;cursor:pointer;color:var(--text);font-size:13px;border-bottom:1px solid #202735}.nick-suggestion:last-child{border-bottom:0}.nick-suggestion:hover,.nick-suggestion:focus{background:#171f2c}.nick-suggestion small{display:block;color:var(--muted);font-size:10px;margin-top:2px}.field label{font-size:12px;color:var(--muted)}input,select,button{font:inherit}input,select{background:#0c1119;border:1px solid var(--border);color:var(--text);border-radius:11px;padding:11px}.btn{border:1px solid var(--border);background:#171f2c;color:var(--text);border-radius:11px;padding:11px 14px;font-weight:800;cursor:pointer}.primary{background:linear-gradient(135deg,var(--accent),#5e40df);border-color:transparent}.options{display:flex;gap:16px;align-items:center;margin-top:12px;color:var(--muted);font-size:13px}.settings{display:none}.settings.open{display:block}.settings-row{display:grid;grid-template-columns:1fr auto auto;gap:10px;align-items:end}.hint{color:var(--muted);font-size:12px;line-height:1.4}.progress{display:none}.progress.open{display:block}.track{height:8px;background:#080b10;border-radius:99px;overflow:hidden;margin-top:10px}.bar{height:100%;width:5%;background:linear-gradient(90deg,var(--accent),var(--good))}
 .stats{display:none;grid-template-columns:repeat(4,1fr);gap:10px}.stats.open{display:grid}.stat{padding:16px}.stat span{display:block;color:var(--muted);font-size:11px;margin-bottom:6px}.stat strong{font-size:24px}.wide{grid-column:span 2}.sub{display:block;color:var(--muted);font-size:11px;margin-top:6px}
-.hours-controls{display:grid;grid-template-columns:1fr 1fr auto;gap:12px;align-items:end;margin:12px 0}.hours-metrics{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}.hours-metric{background:#0c1119;border:1px solid var(--border);border-radius:12px;padding:14px}.hours-metric small{display:block;color:var(--muted);font-size:12px}.hours-metric strong{display:block;font-size:25px;margin-top:5px}.hours-head{display:flex;align-items:center;justify-content:space-between;gap:10px}.hours-desc{font-size:13px;color:var(--muted);margin:6px 0}.hours-note{margin-top:12px}.results{display:none}.results.open{display:block}.head{display:flex;justify-content:space-between;align-items:center}.table{overflow:auto;max-height:620px}table{width:100%;border-collapse:collapse;min-width:940px}th,td{text-align:left;padding:11px;border-bottom:1px solid #232b38;font-size:12px}th{position:sticky;top:0;background:#121924;color:var(--muted)}.pill{padding:4px 7px;border-radius:99px}.win{background:#12382d;color:#7af0c5}.loss{background:#3a1820;color:#ff8ea0}
-@media(max-width:800px){.hours-controls{grid-template-columns:1fr 1fr}.hours-controls button{grid-column:span 2}.hours-metrics{grid-template-columns:1fr 1fr}.hours-metric:first-child{grid-column:span 2}.grid{grid-template-columns:1fr}.settings-row{grid-template-columns:1fr}.stats{grid-template-columns:1fr 1fr}.wide{grid-column:span 2}.hero{flex-direction:column}.top{height:62px}}
+.hours-section{margin-top:24px;border-color:#4b3d77;background:linear-gradient(155deg,#1e1a34,#111722 55%)}.hours-head{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap}.hours-head h2{font-size:25px;margin:4px 0}.hours-kicker{color:#b8aaff;font-size:11px;font-weight:900;letter-spacing:.07em}.hours-desc{font-size:13px;color:var(--muted);margin:8px 0 18px}.hours-search{display:grid;grid-template-columns:2fr 1fr;gap:12px}.hours-controls{display:grid;grid-template-columns:1fr 1fr auto;gap:12px;align-items:end;margin:14px 0}.hours-categories{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}.hours-metric{background:#0c1119;border:1px solid var(--border);border-radius:12px;padding:14px;min-width:0}.hours-metric small{display:block;color:var(--muted);font-size:12px}.hours-metric strong{display:block;font-size:22px;margin:7px 0}.hours-metric span{display:block}.hours-grand-total{background:linear-gradient(125deg,#392773,#182b3a);border:1px solid #6855ad;border-radius:14px;padding:20px;margin-top:14px}.hours-grand-total small{display:block;letter-spacing:.08em;font-size:12px;font-weight:800;color:#d4c8ff}.hours-grand-total strong{display:block;font-size:36px;margin:6px 0}.hours-note{margin-top:12px}.hours-progress{display:none;margin:14px 0}.hours-progress.open{display:block}.results{display:none}.results.open{display:block}.head{display:flex;justify-content:space-between;align-items:center}.table{overflow:auto;max-height:620px}table{width:100%;border-collapse:collapse;min-width:940px}th,td{text-align:left;padding:11px;border-bottom:1px solid #232b38;font-size:12px}th{position:sticky;top:0;background:#121924;color:var(--muted)}.pill{padding:4px 7px;border-radius:99px}.win{background:#12382d;color:#7af0c5}.loss{background:#3a1820;color:#ff8ea0}
+@media(max-width:800px){.hours-search{grid-template-columns:1fr}.hours-controls{grid-template-columns:1fr 1fr}.hours-controls button{grid-column:span 2}.hours-categories{grid-template-columns:1fr 1fr}.grid{grid-template-columns:1fr}.settings-row{grid-template-columns:1fr}.stats{grid-template-columns:1fr 1fr}.wide{grid-column:span 2}.hero{flex-direction:column}.top{height:62px}}
 </style>
 </head>
 <body>
@@ -22,20 +22,27 @@
 <section class="card hero"><div><small style="color:#aa96ff;font-weight:900">HISTORIAL ENTRE DOS JUGADORES</small><h1>¿Cuántas partidas jugaron juntos?</h1><p>Descarga los IDs del Jugador 1 directamente por ventanas de tiempo, sin abrir partidas para averiguar cómo seguir hacia atrás. Luego abre cada partida una sola vez para construir un índice local de PUUIDs de compañeros y rivales. El Jugador 2 se busca únicamente por su PUUID dentro de ese índice.</p></div><div id="keyBadge" class="badge bad">API no configurada</div></section>
 <section id="settings" class="card settings"><div class="settings-row"><div class="field"><label>Riot API key</label><input id="apiKey" type="password" placeholder="RGAPI-…" /></div><button id="saveKey" class="btn primary">Guardar</button><button id="testKey" class="btn">Probar</button></div><p class="hint">Se guarda en localStorage de este navegador. No se almacena en Supabase. <a href="https://developer.riotgames.com/" target="_blank" rel="noopener" style="color:#b9abff">Obtener / renovar API key</a>.</p><div id="settingsMsg" class="hint"></div></section>
 <section class="card"><div class="grid"><div class="field"><label>Jugador 1</label><input id="playerA" placeholder="Tu nick#TAG" autocomplete="off" /><div id="suggestA" class="nick-suggestions"></div></div><div class="field"><label>Jugador 2</label><input id="playerB" placeholder="Nick de tu amigo#TAG" autocomplete="off" /><div id="suggestB" class="nick-suggestions"></div></div><div class="field"><label>Región</label><select id="route"><option value="americas">Américas · LAS/LAN/BR/NA</option><option value="europe">Europa</option><option value="asia">Asia</option><option value="sea">SEA</option></select></div><button id="searchBtn" class="btn primary">Buscar historial</button></div><div class="options"><label><input id="sameTeam" type="checkbox" checked="checked" /> Solo mismo equipo</label><label><input id="allHistory" type="checkbox" checked="checked" /> Indexar todo el historial del Jugador 1</label><span id="limitWrap" style="display:none">Máximo: <input id="maxGames" type="number" value="1000" min="1" max="100000" style="width:110px" /></span></div></section>
-<section class="card" id="hoursSection">
-<div class="hours-head"><strong>Horas jugadas · Jugador 1</strong><span class="badge good">Cálculo local</span></div>
-<p class="hours-desc">Elegí un período. Se suman las duraciones de todas las partidas recuperadas y guardadas del Jugador 1, haya jugado o no con el Jugador 2.</p>
+<section class="card hours-section" id="hoursSection">
+<div class="hours-head"><div><small class="hours-kicker">ESTADÍSTICAS INDIVIDUALES</small><h2>Horas desperdiciadas</h2></div><span class="badge good">Independiente del dúo</span></div>
+<p class="hours-desc">Consultá las horas de juego de una sola cuenta. No hace falta ingresar otro jugador. Se cuentan las partidas recuperables desde Riot.</p>
+<div class="hours-search">
+<div class="field"><label for="hoursNick">Riot ID</label><input id="hoursNick" placeholder="TuNick#TAG" autocomplete="off" /><div id="suggestH" class="nick-suggestions"></div></div>
+<div class="field"><label for="hoursRoute">Región</label><select id="hoursRoute"><option value="americas">Américas · LAS/LAN/BR/NA</option><option value="europe">Europa</option><option value="asia">Asia</option><option value="sea">SEA</option></select></div>
+</div>
 <div class="hours-controls">
-<div class="field"><label for="hoursFrom">Desde</label><input type="date" id="hoursFrom" /></div>
-<div class="field"><label for="hoursTo">Hasta</label><input type="date" id="hoursTo" /></div>
-<button type="button" id="hoursLoad" class="btn">Cargar historial del Jugador 1</button>
+<div class="field"><label for="hoursFrom">Desde (opcional)</label><input type="date" id="hoursFrom" /></div>
+<div class="field"><label for="hoursTo">Hasta (opcional)</label><input type="date" id="hoursTo" /></div>
+<button type="button" id="hoursLoad" class="btn primary">Calcular horas</button>
 </div>
-<div class="hours-metrics">
-<div class="hours-metric"><small>Tiempo jugado</small><strong id="hoursTotal">—</strong></div>
-<div class="hours-metric"><small>Partidas del período</small><strong id="hoursGames">—</strong></div>
-<div class="hours-metric"><small>Duración promedio</small><strong id="hoursAverage">—</strong></div>
+<div class="hours-progress" id="hoursProgress" aria-live="polite"><strong id="hoursTitle">Consultando partidas…</strong><div id="hoursStatus" class="hint"></div><div class="track"><div class="bar" id="hoursBar"></div></div></div>
+<div class="hours-categories">
+<div class="hours-metric"><small>Ranked Solo/Dúo</small><strong id="hoursSolo">—</strong><span id="hoursSoloGames" class="hint"></span></div>
+<div class="hours-metric"><small>Ranked Flex</small><strong id="hoursFlex">—</strong><span id="hoursFlexGames" class="hint"></span></div>
+<div class="hours-metric"><small>Normales</small><strong id="hoursNormals">—</strong><span id="hoursNormalsGames" class="hint"></span></div>
+<div class="hours-metric"><small>Otros modos (ARAM, Arena, etc.)</small><strong id="hoursOther">—</strong><span id="hoursOtherGames" class="hint"></span></div>
 </div>
-<div id="hoursNote" class="hint hours-note">Cargá el historial del Jugador 1 una vez. Después, cambiar las fechas no consume Riot API.</div>
+<div class="hours-grand-total"><small>TOTAL DE HORAS DESPERDICIADAS</small><strong id="hoursTotal">—</strong><span id="hoursGames" class="hint"></span></div>
+<p id="hoursNote" class="hint hours-note">Ingresá un Riot ID y presioná «Calcular horas». Las partidas ya descargadas se reutilizan y cambiar el rango de fechas recalcula localmente.</p>
 </section>
 <section id="progress" class="card progress"><strong id="progressTitle">Preparando…</strong><div id="progressMeta" class="hint"></div><div id="diagnostic" class="hint" style="margin-top:5px"></div><div class="track"><div id="bar" class="bar"></div></div></section>
 <section id="stats" class="stats"><div class="card stat"><span>Partidas juntas</span><strong id="matches">0</strong></div><div class="card stat"><span>Victorias</span><strong id="wins">0</strong></div><div class="card stat"><span>Derrotas</span><strong id="losses">0</strong></div><div class="card stat"><span>Winrate</span><strong id="wr">0%</strong></div><div class="card stat wide"><span id="kdaALabel">Promedio K/D/A histórico · Jugador 1</span><strong id="kdaA">—</strong><small id="kdaA30" class="sub">Últimos 30 días: —</small></div><div class="card stat wide"><span id="kdaBLabel">Promedio K/D/A histórico · Jugador 2</span><strong id="kdaB">—</strong><small id="kdaB30" class="sub">Últimos 30 días: —</small></div></section>
@@ -44,7 +51,7 @@
 <script type="application/javascript">
 //<![CDATA[
 const API='https://tizyjenayrcdkcodsjnc.supabase.co/functions/v1/duohistory'; const Q={400:'Normal Draft',420:'Ranked Solo/Duo',430:'Normal Blind',440:'Ranked Flex',450:'ARAM',490:'Swiftplay',700:'Clash',900:'ARURF',1300:'Nexus Blitz',1400:'Ultimate Spellbook',1700:'Arena',1710:'Arena',1900:'URF'};
-const $=s=>document.querySelector(s); const e={settingsBtn:$('#settingsBtn'),settings:$('#settings'),apiKey:$('#apiKey'),saveKey:$('#saveKey'),testKey:$('#testKey'),settingsMsg:$('#settingsMsg'),keyBadge:$('#keyBadge'),playerA:$('#playerA'),playerB:$('#playerB'),suggestA:$('#suggestA'),suggestB:$('#suggestB'),route:$('#route'),sameTeam:$('#sameTeam'),allHistory:$('#allHistory'),limitWrap:$('#limitWrap'),maxGames:$('#maxGames'),searchBtn:$('#searchBtn'),progress:$('#progress'),progressTitle:$('#progressTitle'),progressMeta:$('#progressMeta'),diagnostic:$('#diagnostic'),bar:$('#bar'),stats:$('#stats'),matches:$('#matches'),wins:$('#wins'),losses:$('#losses'),wr:$('#wr'),kdaA:$('#kdaA'),kdaB:$('#kdaB'),kdaA30:$('#kdaA30'),kdaB30:$('#kdaB30'),kdaALabel:$('#kdaALabel'),kdaBLabel:$('#kdaBLabel'),results:$('#results'),count:$('#count'),body:$('#body'),headA:$('#headA'),headB:$('#headB'),csvBtn:$('#csvBtn'),hoursLoad:$('#hoursLoad'),hoursFrom:$('#hoursFrom'),hoursTo:$('#hoursTo'),hoursTotal:$('#hoursTotal'),hoursGames:$('#hoursGames'),hoursAverage:$('#hoursAverage'),hoursNote:$('#hoursNote')}; let state={all:[],hourEntries:[],hoursCoverage:null,hoursPlayer:null}; const getKey=()=>localStorage.getItem('duohistory_rgapi')||'';
+const $=s=>document.querySelector(s); const e={settingsBtn:$('#settingsBtn'),settings:$('#settings'),apiKey:$('#apiKey'),saveKey:$('#saveKey'),testKey:$('#testKey'),settingsMsg:$('#settingsMsg'),keyBadge:$('#keyBadge'),playerA:$('#playerA'),playerB:$('#playerB'),suggestA:$('#suggestA'),suggestB:$('#suggestB'),route:$('#route'),sameTeam:$('#sameTeam'),allHistory:$('#allHistory'),limitWrap:$('#limitWrap'),maxGames:$('#maxGames'),searchBtn:$('#searchBtn'),progress:$('#progress'),progressTitle:$('#progressTitle'),progressMeta:$('#progressMeta'),diagnostic:$('#diagnostic'),bar:$('#bar'),stats:$('#stats'),matches:$('#matches'),wins:$('#wins'),losses:$('#losses'),wr:$('#wr'),kdaA:$('#kdaA'),kdaB:$('#kdaB'),kdaA30:$('#kdaA30'),kdaB30:$('#kdaB30'),kdaALabel:$('#kdaALabel'),kdaBLabel:$('#kdaBLabel'),results:$('#results'),count:$('#count'),body:$('#body'),headA:$('#headA'),headB:$('#headB'),csvBtn:$('#csvBtn'),hoursLoad:$('#hoursLoad'),hoursNick:$('#hoursNick'),suggestH:$('#suggestH'),hoursRoute:$('#hoursRoute'),hoursFrom:$('#hoursFrom'),hoursTo:$('#hoursTo'),hoursProgress:$('#hoursProgress'),hoursTitle:$('#hoursTitle'),hoursStatus:$('#hoursStatus'),hoursBar:$('#hoursBar'),hoursSolo:$('#hoursSolo'),hoursFlex:$('#hoursFlex'),hoursNormals:$('#hoursNormals'),hoursOther:$('#hoursOther'),hoursSoloGames:$('#hoursSoloGames'),hoursFlexGames:$('#hoursFlexGames'),hoursNormalsGames:$('#hoursNormalsGames'),hoursOtherGames:$('#hoursOtherGames'),hoursTotal:$('#hoursTotal'),hoursGames:$('#hoursGames'),hoursNote:$('#hoursNote')}; let state={all:[],hourEntries:[],hoursCoverage:null,hoursPlayer:null};let activeProgress='duo',activeRoute=null;const currentRoute=()=>activeRoute||e.route.value;const progressTitle=()=>activeProgress==='hours'?e.hoursTitle:e.progressTitle;const progressMeta=()=>activeProgress==='hours'?e.hoursStatus:e.progressMeta; const getKey=()=>localStorage.getItem('duohistory_rgapi')||'';
 const NICK_HISTORY_KEY='duohistory_riotid_history';
 function getNickHistory(){try{const v=JSON.parse(localStorage.getItem(NICK_HISTORY_KEY)||'[]');return Array.isArray(v)?v:[]}catch{return []}}
 function saveNickHistory(...ids){let list=getNickHistory();for(const raw of ids){const id=String(raw||'').trim();if(!id||!id.includes('#'))continue;list=list.filter(x=>String(x).toLocaleLowerCase()!==id.toLocaleLowerCase());list.unshift(id)}localStorage.setItem(NICK_HISTORY_KEY,JSON.stringify(list.slice(0,20)))}
@@ -53,20 +60,20 @@ function bindNickHistory(input,box){input.addEventListener('focus',()=>renderNic
 
 function refreshKey(){const k=getKey();e.keyBadge.textContent=k?'API configurada':'API no configurada';e.keyBadge.className='badge '+(k?'good':'bad')} e.settingsBtn.onclick=()=>e.settings.classList.toggle('open'); e.allHistory.onchange=()=>e.limitWrap.style.display=e.allHistory.checked?'none':'inline'; e.saveKey.onclick=()=>{const k=e.apiKey.value.trim();if(!k.startsWith('RGAPI-')){e.settingsMsg.textContent='La clave debe empezar con RGAPI-.';return}localStorage.setItem('duohistory_rgapi',k);e.apiKey.value='';e.settingsMsg.textContent='Clave guardada en este dispositivo.';refreshKey()};
 const riotRequestTimes=[];
-async function waitCountdown(seconds,prefix='Esperando para no superar el límite de Riot'){let left=Math.max(1,Math.ceil(Number(seconds)||1));while(left>0){e.progressMeta.textContent=prefix+' · '+left+' s…';await new Promise(x=>setTimeout(x,1000));left--}e.progressMeta.textContent='Continuando…'}
+async function waitCountdown(seconds,prefix='Esperando para no superar el límite de Riot'){let left=Math.max(1,Math.ceil(Number(seconds)||1));while(left>0){progressMeta().textContent=prefix+' · '+left+' s…';await new Promise(x=>setTimeout(x,1000));left--}progressMeta().textContent='Continuando…'}
 async function respectRiotLimit(){while(true){const now=Date.now();while(riotRequestTimes.length&&now-riotRequestTimes[0]>=120000)riotRequestTimes.shift();const last1=riotRequestTimes.filter(t=>now-t<1000);if(last1.length>=15){await new Promise(x=>setTimeout(x,1100-(now-last1[0])));continue}if(riotRequestTimes.length>=88){const wait=Math.max(1,Math.ceil((120000-(now-riotRequestTimes[0])+500)/1000));await waitCountdown(wait);continue}riotRequestTimes.push(Date.now());return}}
-async function call(action,payload={}){const apiKey=getKey();if(!apiKey)throw new Error('Primero guardá tu Riot API key.');for(let intento=0;intento<6;intento++){await respectRiotLimit();const r=await fetch(API,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({action,apiKey,route:e.route.value,...payload})});const d=await r.json();if(r.status===429&&intento<5){const espera=Math.max(1,Number(d.retryAfter||10));await waitCountdown(espera,'Riot alcanzó el límite de consultas · reintentando en');continue}if(!r.ok){const err=new Error(d.error||('HTTP '+r.status));err.status=r.status;throw err}return d.data}throw new Error('Riot API sigue limitando las consultas. Reintentá en unos minutos.')} e.testKey.onclick=async()=>{const t=e.apiKey.value.trim();if(t.startsWith('RGAPI-'))localStorage.setItem('duohistory_rgapi',t);refreshKey();e.settingsMsg.textContent='Probando…';try{const a=await call('account',{riotId:e.playerA.value.trim()});e.settingsMsg.textContent='Funciona: '+a.gameName+'#'+a.tagLine}catch(err){e.settingsMsg.textContent=err.message}};
+async function call(action,payload={}){const apiKey=getKey();if(!apiKey)throw new Error('Primero guardá tu Riot API key.');for(let intento=0;intento<6;intento++){await respectRiotLimit();const r=await fetch(API,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({action,apiKey,route:currentRoute(),...payload})});const d=await r.json();if(r.status===429&&intento<5){const espera=Math.max(1,Number(d.retryAfter||10));await waitCountdown(espera,'Riot alcanzó el límite de consultas · reintentando en');continue}if(!r.ok){const err=new Error(d.error||('HTTP '+r.status));err.status=r.status;throw err}return d.data}throw new Error('Riot API sigue limitando las consultas. Reintentá en unos minutos.')} e.testKey.onclick=async()=>{const t=e.apiKey.value.trim();if(t.startsWith('RGAPI-'))localStorage.setItem('duohistory_rgapi',t);refreshKey();e.settingsMsg.textContent='Probando…';try{const a=await call('account',{riotId:e.playerA.value.trim()});e.settingsMsg.textContent='Funciona: '+a.gameName+'#'+a.tagLine}catch(err){e.settingsMsg.textContent=err.message}};
 function openDB(){return new Promise((res,rej)=>{const q=indexedDB.open('duohistory-v9',1);q.onupgradeneeded=()=>{if(!q.result.objectStoreNames.contains('kv'))q.result.createObjectStore('kv')};q.onsuccess=()=>res(q.result);q.onerror=()=>rej(q.error)})} async function dbGet(k){const d=await openDB();return new Promise((res,rej)=>{const q=d.transaction('kv','readonly').objectStore('kv').get(k);q.onsuccess=()=>res(q.result);q.onerror=()=>rej(q.error)})} async function dbSet(k,v){const d=await openDB();return new Promise((res,rej)=>{const q=d.transaction('kv','readwrite').objectStore('kv').put(v,k);q.onsuccess=()=>res();q.onerror=()=>rej(q.error)})}
 const HISTORY_FLOOR=Math.floor(Date.UTC(2021,0,1)/1000),HISTORY_WINDOW=180*24*60*60;
 function uniq(xs){return [...new Set(xs)]}
-async function resolveAccount(id){const route=e.route.value,trimmed=id.trim(),key='account:'+route+':'+trimmed.toLocaleLowerCase(),cached=await dbGet(key).catch(()=>null);if(cached&&Date.now()-cached.savedAt<30*60*1000)return cached.data;const data=await call('account',{riotId:trimmed});await dbSet(key,{data,savedAt:Date.now()}).catch(()=>{});return data}
+async function resolveAccount(id){const route=currentRoute(),trimmed=id.trim(),key='account:'+route+':'+trimmed.toLocaleLowerCase(),cached=await dbGet(key).catch(()=>null);if(cached&&Date.now()-cached.savedAt<30*60*1000)return cached.data;const data=await call('account',{riotId:trimmed});await dbSet(key,{data,savedAt:Date.now()}).catch(()=>{});return data}
 async function pageIds(puuid,start,count,startTime=0,endTime=0){const payload={puuid,start,count};if(startTime)payload.startTime=startTime;if(endTime)payload.endTime=endTime;return call('matchIds',payload)}
-async function idsInWindow(puuid,from,to,label,depth=0){let ids=[],start=0;while(start<1000){const page=await pageIds(puuid,start,100,from,to);if(!page.length)break;ids.push(...page);start+=page.length;e.progressTitle.textContent=label+': '+ids.length+' IDs en '+new Date(from*1000).toLocaleDateString('es-AR')+' → '+new Date(to*1000).toLocaleDateString('es-AR');if(page.length<100)break}ids=uniq(ids);if(start>=1000&&to-from>86400&&depth<16){const mid=Math.floor((from+to)/2);e.progressMeta.textContent=label+': período con 1000+ partidas, dividiendo ventana…';const older=await idsInWindow(puuid,from,mid,label,depth+1),newer=await idsInWindow(puuid,mid,to,label,depth+1);return uniq([...older,...newer])}return ids}
-async function fullHistory(puuid,label){let ids=[],to=Math.floor(Date.now()/1000),windowNo=0;while(to>HISTORY_FLOOR){windowNo++;const from=Math.max(HISTORY_FLOOR,to-HISTORY_WINDOW),part=await idsInWindow(puuid,from,to,label);ids=uniq([...ids,...part]);e.progressTitle.textContent=label+': '+ids.length+' IDs encontrados…';e.progressMeta.textContent='Ventana '+windowNo+' · '+new Date(from*1000).toLocaleDateString('es-AR')+' → '+new Date(to*1000).toLocaleDateString('es-AR')+' · total '+ids.length;to=from}return ids}
+async function idsInWindow(puuid,from,to,label,depth=0){let ids=[],start=0;while(start<1000){const page=await pageIds(puuid,start,100,from,to);if(!page.length)break;ids.push(...page);start+=page.length;progressTitle().textContent=label+': '+ids.length+' IDs en '+new Date(from*1000).toLocaleDateString('es-AR')+' → '+new Date(to*1000).toLocaleDateString('es-AR');if(page.length<100)break}ids=uniq(ids);if(start>=1000&&to-from>86400&&depth<16){const mid=Math.floor((from+to)/2);progressMeta().textContent=label+': período con 1000+ partidas, dividiendo ventana…';const older=await idsInWindow(puuid,from,mid,label,depth+1),newer=await idsInWindow(puuid,mid,to,label,depth+1);return uniq([...older,...newer])}return ids}
+async function fullHistory(puuid,label){let ids=[],to=Math.floor(Date.now()/1000),windowNo=0;while(to>HISTORY_FLOOR){windowNo++;const from=Math.max(HISTORY_FLOOR,to-HISTORY_WINDOW),part=await idsInWindow(puuid,from,to,label);ids=uniq([...ids,...part]);progressTitle().textContent=label+': '+ids.length+' IDs encontrados…';progressMeta().textContent='Ventana '+windowNo+' · '+new Date(from*1000).toLocaleDateString('es-AR')+' → '+new Date(to*1000).toLocaleDateString('es-AR')+' · total '+ids.length;to=from}return ids}
 async function refreshCachedHistory(puuid,cached,label){const now=Math.floor(Date.now()/1000),last=Math.floor(Number(cached.updatedAt||0)/1000);if(!last)return null;const from=Math.max(HISTORY_FLOOR,last-7*24*60*60),fresh=await idsInWindow(puuid,from,now,label);return uniq([...fresh,...cached.ids])}
-async function recentHistory(puuid,limit,label){let ids=[],start=0;while(ids.length<limit&&start<1000){const take=Math.min(100,limit-ids.length),page=await pageIds(puuid,start,take,0,0);if(!page.length)break;ids.push(...page);start+=page.length;e.progressTitle.textContent=label+': '+ids.length+' IDs cargados…';if(page.length<take)break}return uniq(ids).slice(0,limit)}
-async function history(puuid,max,label){if(max&&isFinite(max))return recentHistory(puuid,max,label);const route=e.route.value,key='histfull-v9:'+route+':'+puuid,cached=await dbGet(key).catch(()=>null);if(cached&&cached.complete&&Array.isArray(cached.ids)&&Date.now()-Number(cached.updatedAt||0)<10*60*1000)return cached.ids;if(cached&&cached.complete&&Array.isArray(cached.ids)&&cached.ids.length){e.progressTitle.textContent=label+': actualizando lista local de IDs…';const updated=await refreshCachedHistory(puuid,cached,label);if(updated){await dbSet(key,{ids:updated,complete:true,updatedAt:Date.now()});return updated}}e.progressTitle.textContent=label+': descargando IDs por ventanas de tiempo…';const ids=await fullHistory(puuid,label);await dbSet(key,{ids,complete:true,updatedAt:Date.now()});return ids}
-async function match(id){const k='match:'+e.route.value+':'+id,c=await dbGet(k).catch(()=>null);if(c&&c.__missing)return {data:null,cached:true,unavailable:true};if(c)return {data:c,cached:true,unavailable:false};try{const d=await call('match',{matchId:id});await dbSet(k,d).catch(()=>{});return {data:d,cached:false,unavailable:false}}catch(err){if(err.status===404){await dbSet(k,{__missing:true}).catch(()=>{});return {data:null,cached:false,unavailable:true}}throw err}} function norm(m,a,b){const i=m&&m.info;if(!i)return null;const pa=i.participants.find(p=>p.puuid===a),pb=i.participants.find(p=>p.puuid===b);if(!pa||!pb)return null;const same=pa.teamId===pb.teamId;return{id:m.metadata.matchId,date:i.gameEndTimestamp||i.gameStartTimestamp||i.gameCreation||0,dur:Math.round(i.gameDuration||0),queue:Q[i.queueId]||('Cola '+i.queueId),same,win:same?!!pa.win:null,a:{champ:pa.championName,k:pa.kills,d:pa.deaths,a:pa.assists},b:{champ:pb.championName,k:pb.kills,d:pb.deaths,a:pb.assists}}}
+async function recentHistory(puuid,limit,label){let ids=[],start=0;while(ids.length<limit&&start<1000){const take=Math.min(100,limit-ids.length),page=await pageIds(puuid,start,take,0,0);if(!page.length)break;ids.push(...page);start+=page.length;progressTitle().textContent=label+': '+ids.length+' IDs cargados…';if(page.length<take)break}return uniq(ids).slice(0,limit)}
+async function history(puuid,max,label){if(max&&isFinite(max))return recentHistory(puuid,max,label);const route=currentRoute(),key='histfull-v9:'+route+':'+puuid,cached=await dbGet(key).catch(()=>null);if(cached&&cached.complete&&Array.isArray(cached.ids)&&Date.now()-Number(cached.updatedAt||0)<10*60*1000)return cached.ids;if(cached&&cached.complete&&Array.isArray(cached.ids)&&cached.ids.length){progressTitle().textContent=label+': actualizando lista local de IDs…';const updated=await refreshCachedHistory(puuid,cached,label);if(updated){await dbSet(key,{ids:updated,complete:true,updatedAt:Date.now()});return updated}}progressTitle().textContent=label+': descargando IDs por ventanas de tiempo…';const ids=await fullHistory(puuid,label);await dbSet(key,{ids,complete:true,updatedAt:Date.now()});return ids}
+async function match(id){const k='match:'+currentRoute()+':'+id,c=await dbGet(k).catch(()=>null);if(c&&c.__missing)return {data:null,cached:true,unavailable:true};if(c)return {data:c,cached:true,unavailable:false};try{const d=await call('match',{matchId:id});await dbSet(k,d).catch(()=>{});return {data:d,cached:false,unavailable:false}}catch(err){if(err.status===404){await dbSet(k,{__missing:true}).catch(()=>{});return {data:null,cached:false,unavailable:true}}throw err}} function norm(m,a,b){const i=m&&m.info;if(!i)return null;const pa=i.participants.find(p=>p.puuid===a),pb=i.participants.find(p=>p.puuid===b);if(!pa||!pb)return null;const same=pa.teamId===pb.teamId;return{id:m.metadata.matchId,date:i.gameEndTimestamp||i.gameStartTimestamp||i.gameCreation||0,dur:Math.round(i.gameDuration||0),queue:Q[i.queueId]||('Cola '+i.queueId),same,win:same?!!pa.win:null,a:{champ:pa.championName,k:pa.kills,d:pa.deaths,a:pa.assists},b:{champ:pb.championName,k:pb.kills,d:pb.deaths,a:pb.assists}}}
 function kda(list,key){function agg(xs){if(!xs.length)return null;let k=0,d=0,a=0;xs.forEach(m=>{k+=m[key].k;d+=m[key].d;a+=m[key].a});const n=xs.length,ak=k/n,ad=d/n,aa=a/n;return{n,ak,ad,aa,r:ad?((ak+aa)/ad):null}}const cut=Date.now()-30*864e5;return{all:agg(list),m30:agg(list.filter(x=>x.date>=cut))}} function fk(x){if(!x)return'—';return x.ak.toFixed(2)+' / '+x.ad.toFixed(2)+' / '+x.aa.toFixed(2)+' ('+(x.r===null?'Perfecto':x.r.toFixed(2)+' KDA')+')'}
 function render(){const list=state.all.filter(x=>!e.sameTeam.checked||x.same).sort((x,y)=>y.date-x.date),same=list.filter(x=>x.same),wins=same.filter(x=>x.win).length;e.matches.textContent=String(list.length);e.wins.textContent=String(wins);e.losses.textContent=String(same.length-wins);e.wr.textContent=(same.length?wins/same.length*100:0).toFixed(1)+'%';const ka=kda(list,'a'),kb=kda(list,'b');e.kdaA.textContent=fk(ka.all);e.kdaB.textContent=fk(kb.all);e.kdaA30.textContent='Últimos 30 días: '+fk(ka.m30)+(ka.m30?' · '+ka.m30.n+' partidas':'');e.kdaB30.textContent='Últimos 30 días: '+fk(kb.m30)+(kb.m30?' · '+kb.m30.n+' partidas':'');e.body.innerHTML=list.map(m=>'<tr><td>'+new Date(m.date).toLocaleString('es-AR')+'</td><td>'+m.queue+'</td><td><span class="pill '+(m.win?'win':'loss')+'">'+(m.win?'Victoria':'Derrota')+'</span></td><td><b>'+m.a.champ+'</b> '+m.a.k+'/'+m.a.d+'/'+m.a.a+'</td><td><b>'+m.b.champ+'</b> '+m.b.k+'/'+m.b.d+'/'+m.b.a+'</td><td>'+Math.floor(m.dur/60)+':'+String(m.dur%60).padStart(2,'0')+'</td></tr>').join('');e.count.textContent=list.length+' partidas';e.stats.classList.add('open');e.results.classList.add('open')} e.sameTeam.onchange=()=>state.all.length&&render();
 
@@ -78,39 +85,121 @@ function localMatchSummary(info){
   // En algunas partidas antiguas gameDuration puede venir en milisegundos.
   if(duration>24*3600)duration=duration/1000;
   if(!Number.isFinite(date)||date<=0||!Number.isFinite(duration)||duration<=0)return null;
-  return {date,duration};
+  return {date,duration,queueId:Number(info.queueId||0)};
+}
+
+function hourGroup(queueId){if(queueId===420)return 'solo';if(queueId===440)return 'flex';if(queueId===400||queueId===430||queueId===490)return 'normals';return 'other'}
+function dateBounds(){
+ const from=e.hoursFrom.value?Math.floor(new Date(e.hoursFrom.value+'T00:00:00').getTime()/1000):HISTORY_FLOOR;
+ const to=e.hoursTo.value?Math.floor(new Date(e.hoursTo.value+'T00:00:00').getTime()/1000)+86400:Math.floor(Date.now()/1000);
+ if(!Number.isFinite(from)||!Number.isFinite(to)||from>=to)throw new Error('El rango de fechas no es válido.');
+ return {from,to};
 }
 function recalcHours(){
-  const coverage=state.hoursCoverage,entries=state.hourEntries;
-  if(!coverage){e.hoursTotal.textContent='—';e.hoursGames.textContent='—';e.hoursAverage.textContent='—';return}
-  const from=e.hoursFrom.value?new Date(e.hoursFrom.value+'T00:00:00').getTime():0;
-  const endDate=e.hoursTo.value?new Date(e.hoursTo.value+'T00:00:00'):null;
-  if(endDate)endDate.setDate(endDate.getDate()+1);
-  const to=endDate?endDate.getTime():Infinity;
-  if(from>=to){
-    e.hoursTotal.textContent='—';e.hoursGames.textContent='—';e.hoursAverage.textContent='—';
-    e.hoursNote.textContent='El rango es inválido: la fecha de inicio es posterior a la fecha final.';return
-  }
-  let seconds=0,games=0;
-  for(const p of entries){if(p.date>=from&&p.date<to){seconds+=p.duration;games++}}
-  e.hoursTotal.textContent=formatDuration(seconds);
-  e.hoursGames.textContent=String(games);
-  e.hoursAverage.textContent=games?formatDuration(seconds/games):'—';
-  e.hoursNote.textContent='Jugador 1: '+state.hoursPlayer+' · '+coverage.valid+' partidas con duración / '+coverage.total+' IDs recuperados. '+coverage.unavailable+' sin datos de duración. Resultado parcial si Riot no devuelve todo el historial.';
+ const coverage=state.hoursCoverage,entries=state.hourEntries;
+ if(!coverage)return;
+ let b;try{b=dateBounds()}catch(err){e.hoursNote.textContent=err.message;return}
+ const sums={solo:0,flex:0,normals:0,other:0},counts={solo:0,flex:0,normals:0,other:0};
+ for(const p of entries){const start=p.date/1000;if(start<b.from||start>=b.to)continue;const g=hourGroup(p.queueId);sums[g]+=p.duration;counts[g]++}
+ const view=[['solo','Solo'],['flex','Flex'],['normals','Normals'],['other','Other']];
+ for(const [key,suffix] of view){e['hours'+suffix].textContent=formatDuration(sums[key]);e['hours'+suffix+'Games'].textContent=counts[key]+' partidas'}
+ const seconds=Object.values(sums).reduce((a,b)=>a+b,0),games=Object.values(counts).reduce((a,b)=>a+b,0);
+ e.hoursTotal.textContent=formatDuration(seconds);e.hoursGames.textContent=games+' partidas computadas';
+ const outside=b.from<coverage.from||b.to>coverage.to;
+ e.hoursNote.textContent=state.hoursPlayer+' · '+coverage.total+' IDs recuperados · '+coverage.valid+' con duración y modo · '+coverage.unavailable+' sin datos.'+(outside?' Cambiaste el rango: pulsá «Calcular horas» para descargar las fechas que faltan.':' Las fechas se filtran localmente, sin consultas adicionales.')+' Los totales pueden ser parciales si Riot no ofrece todo el historial.';
 }
 e.hoursFrom.addEventListener('change',recalcHours);
 e.hoursTo.addEventListener('change',recalcHours);
+async function playtimeIds(puuid,label,b){
+ // Keep a short TTL on date-range ID lists. No repeated calls when user re-runs the same range.
+ const whole=!e.hoursFrom.value&&!e.hoursTo.value;
+ if(whole)return history(puuid,0,label);
+ const cacheKey='playtime-range-ids-v1:'+currentRoute()+':'+puuid+':'+b.from+':'+b.to;
+ const cached=await dbGet(cacheKey).catch(()=>null);
+ if(cached&&Date.now()-cached.at<10*60*1000&&Array.isArray(cached.ids))return cached.ids;
+ progressTitle().textContent='Buscando IDs entre las fechas indicadas…';
+ const ids=await idsInWindow(puuid,b.from,b.to,label);
+ await dbSet(cacheKey,{ids,at:Date.now()}).catch(()=>{});
+ return ids;
+}
+async function getPlaytimeOnly(account,b){
+ const route=currentRoute(),puuid=account.puuid,ids=await playtimeIds(puuid,account.gameName,b);
+ const cacheKey='playtime-index-v1:'+route+':'+puuid;
+ const stored=await dbGet(cacheKey).catch(()=>null);
+ const playtime=stored&&stored.entries?stored:{entries:{},missing:{}};
+ const duo=await dbGet('participant-index-v2:'+route+':'+puuid).catch(()=>null);
+ let missingIds=ids.filter(id=>!playtime.entries[id]&&!playtime.missing[id]);
+ // Derive minimal summaries from previously indexed Duo matches, if available.
+ for(const id of missingIds){
+   const d=duo&&duo.durations&&duo.durations[id];
+   if(d&&Number.isFinite(d.queueId)&&Number.isFinite(d.duration)&&d.duration>0)playtime.entries[id]=d;
+ }
+ missingIds=ids.filter(id=>!playtime.entries[id]&&!playtime.missing[id]);
+ let next=0,done=0,hits=0,notFound=0;
+ progressTitle().textContent=missingIds.length?'Leyendo duraciones y tipos de partida…':'Cargando datos locales…';
+ progressMeta().textContent=ids.length+' IDs · '+missingIds.length+' partidas por consultar';
+ e.hoursBar.style.width=missingIds.length?'5%':'100%';
+ // A match detail is mandatory to know queueId + gameDuration; cache is shared with Duo.
+ async function worker(){
+   while(true){
+     const pos=next++;if(pos>=missingIds.length)return;
+     const id=missingIds[pos],r=await match(id);
+     if(r.cached)hits++;
+     if(r.unavailable){playtime.missing[id]=true;notFound++}
+     else {
+       const summary=localMatchSummary(r.data&&r.data.info);
+       if(summary)playtime.entries[id]=summary;
+       else playtime.missing[id]=true
+     }
+     done++;
+     if(done%10===0||done===missingIds.length){
+       progressTitle().textContent='Calculando horas por modalidad…';
+       progressMeta().textContent=done+'/'+missingIds.length+' partidas · '+hits+' ya descargadas · '+notFound+' no disponibles';
+       e.hoursBar.style.width=(missingIds.length?Math.round(done/missingIds.length*100):100)+'%';
+       await dbSet(cacheKey,playtime).catch(()=>{});
+     }
+   }
+ }
+ await Promise.all(Array.from({length:Math.min(2,Math.max(1,missingIds.length))},()=>worker()));
+ await dbSet(cacheKey,playtime);
+ const entries=ids.map(id=>playtime.entries[id]).filter(x=>x&&Number.isFinite(x.queueId)&&Number.isFinite(x.duration)&&x.duration>0);
+ state.hourEntries=entries;
+ state.hoursCoverage={total:ids.length,valid:entries.length,unavailable:ids.length-entries.length,from:b.from,to:b.to};
+ state.hoursPlayer=account.gameName+'#'+account.tagLine;
+ recalcHours();
+ return {total:ids.length,valid:entries.length};
+}
+e.hoursLoad.onclick=async()=>{
+ if(!getKey()){e.settings.classList.add('open');return}
+ const id=e.hoursNick.value.trim();
+ if(!id.includes('#')){e.hoursNote.textContent='Ingresá un Riot ID con formato Nombre#TAG.';e.hoursNick.focus();return}
+ let b;try{b=dateBounds()}catch(err){e.hoursNote.textContent=err.message;return}
+ e.hoursLoad.disabled=true;e.searchBtn.disabled=true;e.testKey.disabled=true;
+ activeProgress='hours';activeRoute=e.hoursRoute.value;
+ e.hoursProgress.classList.add('open');
+ e.hoursBar.style.width='5%';
+ try{
+   progressTitle().textContent='Buscando al jugador…';progressMeta().textContent='';
+   const account=await resolveAccount(id);
+   saveNickHistory(account.gameName+'#'+account.tagLine);
+   const result=await getPlaytimeOnly(account,b);
+   progressTitle().textContent='Cálculo completado';
+   progressMeta().textContent=result.valid+'/'+result.total+' partidas con duración válida';
+   e.hoursBar.style.width='100%';
+ }catch(err){progressTitle().textContent='Error al calcular horas';progressMeta().textContent=err.message;e.hoursNote.textContent=err.message}
+ finally{activeProgress='duo';activeRoute=null;e.hoursLoad.disabled=false;e.searchBtn.disabled=false;e.testKey.disabled=false}
+};
 async function getPlayer1Index(aa){
   const max=e.allHistory.checked?0:Number(e.maxGames.value||1000);
   const ha=await history(aa.puuid,max,aa.gameName);
-  const indexKey='participant-index-v2:'+e.route.value+':'+aa.puuid;
+  const indexKey='participant-index-v2:'+currentRoute()+':'+aa.puuid;
   const cachedIndex=await dbGet(indexKey).catch(()=>null);
   const index=cachedIndex&&cachedIndex.byPuuid?cachedIndex:{indexed:{},byPuuid:{},updatedAt:0};
   if(!index.durations)index.durations={};
   // Migrar partidas ya indexadas desde su caché, sin volver a consultar Riot.
   const toBackfill=ha.filter(id=>index.indexed[id]&&!index.durations[id]&&index.indexed[id]!=='missing');
   for(const id of toBackfill){
-    const stored=await dbGet('match:'+e.route.value+':'+id).catch(()=>null);
+    const stored=await dbGet('match:'+currentRoute()+':'+id).catch(()=>null);
     if(stored&&stored.info){const summary=localMatchSummary(stored.info);if(summary)index.durations[id]=summary}
   }
   const missing=ha.filter(id=>!index.indexed[id]||index.indexed[id]!=='missing'&&!index.durations[id]);
@@ -138,8 +227,8 @@ async function getPlayer1Index(aa){
       if(summary)index.durations[id]=summary;
       index.indexed[id]=1;done++;
       if(done%15===0||done===missing.length){
-        e.progressTitle.textContent='Indexando partidas del Jugador 1…';
-        e.progressMeta.textContent=done+'/'+missing.length+' nuevas · '+cached+' desde caché · '+unavailable+' no disponibles';
+        progressTitle().textContent='Indexando partidas del Jugador 1…';
+        progressMeta().textContent=done+'/'+missing.length+' nuevas · '+cached+' desde caché · '+unavailable+' no disponibles';
         e.bar.style.width=(missing.length?Math.max(5,Math.round(done/missing.length*100)):100)+'%';
         await dbSet(indexKey,index).catch(()=>{});
       }
@@ -149,25 +238,9 @@ async function getPlayer1Index(aa){
   index.updatedAt=Date.now();
   await dbSet(indexKey,index);
   const entries=ha.map(id=>index.durations[id]).filter(x=>x&&Number.isFinite(x.date)&&Number.isFinite(x.duration));
-  state.hourEntries=entries;
-  state.hoursCoverage={total:ha.length,valid:entries.length,unavailable:ha.length-entries.length};
-  state.hoursPlayer=aa.gameName+'#'+aa.tagLine;
-  recalcHours();
   e.diagnostic.textContent='Jugador 1: '+ha.length+' IDs recuperados · '+entries.length+' partidas con tiempo disponible · índice local listo';
   return {ha,index};
 }
-e.hoursLoad.onclick=async()=>{
-  if(!getKey()){e.settings.classList.add('open');return}
-  if(!e.playerA.value.trim()){e.hoursNote.textContent='Ingresá el Riot ID del Jugador 1.';return}
-  e.hoursLoad.disabled=true;e.searchBtn.disabled=true;e.progress.classList.add('open');
-  try{
-    const aa=await resolveAccount(e.playerA.value);
-    await getPlayer1Index(aa);
-    e.progressTitle.textContent='Historial local actualizado';
-    e.progressMeta.textContent='Cambiar las fechas no consulta Riot.';
-  }catch(err){e.progressTitle.textContent='Error';e.progressMeta.textContent=err.message;e.hoursNote.textContent=err.message}
-  finally{e.hoursLoad.disabled=false;e.searchBtn.disabled=false}
-};
 e.searchBtn.onclick=async()=>{
   if(!getKey()){e.settings.classList.add('open');return}
   e.searchBtn.disabled=true;e.hoursLoad.disabled=true;e.progress.classList.add('open');e.bar.style.width='5%';e.diagnostic.textContent='';
@@ -195,8 +268,8 @@ e.searchBtn.onclick=async()=>{
         done++;
         if(done%10===0||done===candidateIds.length){
           state.all=[...found.values()];
-          e.progressTitle.textContent='Cargando coincidencias…';
-          e.progressMeta.textContent=done+'/'+candidateIds.length+' · '+cached+' en caché · '+unavailable+' no disponibles';
+          progressTitle().textContent='Cargando coincidencias…';
+          progressMeta().textContent=done+'/'+candidateIds.length+' · '+cached+' en caché · '+unavailable+' no disponibles';
           e.bar.style.width=(candidateIds.length?Math.round(done/candidateIds.length*100):100)+'%';
           render()
         }
@@ -205,14 +278,14 @@ e.searchBtn.onclick=async()=>{
     await Promise.all(Array.from({length:Math.min(2,Math.max(1,candidateIds.length))},()=>worker()));
     state.all=[...found.values()];
     render();
-    e.progressTitle.textContent='Búsqueda completada';
-    e.progressMeta.textContent=done+'/'+candidateIds.length+' coincidencias verificadas · '+cached+' desde caché';
-    e.diagnostic.textContent='Jugador 1: '+ha.length+' IDs · índice local: '+state.hoursCoverage.valid+' partidas con duración · '+candidateIds.length+' compartidas por PUUID';
-  }catch(err){e.progressTitle.textContent='Error';e.progressMeta.textContent=err.message;alert(err.message)}
+    progressTitle().textContent='Búsqueda completada';
+    progressMeta().textContent=done+'/'+candidateIds.length+' coincidencias verificadas · '+cached+' desde caché';
+    e.diagnostic.textContent='Jugador 1: '+ha.length+' IDs · índice local: '+Object.keys(index.indexed).length+' partidas · '+candidateIds.length+' compartidas por PUUID';
+  }catch(err){progressTitle().textContent='Error';progressMeta().textContent=err.message;alert(err.message)}
   finally{e.searchBtn.disabled=false;e.hoursLoad.disabled=false}
 };
 e.csvBtn.onclick=()=>{const list=state.all.filter(x=>!e.sameTeam.checked||x.same),rows=[['fecha','cola','resultado','jugadorA','kdaA','jugadorB','kdaB']];list.forEach(m=>rows.push([new Date(m.date).toISOString(),m.queue,m.win?'Victoria':'Derrota',m.a.champ,m.a.k+'/'+m.a.d+'/'+m.a.a,m.b.champ,m.b.k+'/'+m.b.d+'/'+m.b.a]));const csv=rows.map(r=>r.map(v=>'"'+String(v).replace(/"/g,'""')+'"').join(',')).join('\r\n'),blob=new Blob(['\ufeff'+csv],{type:'text/csv'}),a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='duohistory.csv';a.click()}; function cleanupOldDatabases(){['duohistory-v2','duohistory-v3','duohistory-v4','duohistory-v5','duohistory-v6','duohistory-v7','duohistory-v8'].forEach(name=>{try{indexedDB.deleteDatabase(name)}catch{}})}
-cleanupOldDatabases();bindNickHistory(e.playerA,e.suggestA);bindNickHistory(e.playerB,e.suggestB);document.addEventListener('click',ev=>{if(!e.playerA.parentElement.contains(ev.target))e.suggestA.classList.remove('open');if(!e.playerB.parentElement.contains(ev.target))e.suggestB.classList.remove('open')});refreshKey();
+cleanupOldDatabases();bindNickHistory(e.playerA,e.suggestA);bindNickHistory(e.playerB,e.suggestB);bindNickHistory(e.hoursNick,e.suggestH);document.addEventListener('click',ev=>{if(!e.playerA.parentElement.contains(ev.target))e.suggestA.classList.remove('open');if(!e.playerB.parentElement.contains(ev.target))e.suggestB.classList.remove('open');if(!e.hoursNick.parentElement.contains(ev.target))e.suggestH.classList.remove('open')});refreshKey();
 //]]>
 </script>
 </body>
